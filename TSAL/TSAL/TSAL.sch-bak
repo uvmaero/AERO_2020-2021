@@ -1,0 +1,176 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer:LM555xM U?
+U 1 1 5F9882FA
+P 4675 3200
+F 0 "U?" H 4675 3150 50  0000 C CNN
+F 1 "LM555xM" H 4675 3250 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5525 2800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 5525 2800 50  0001 C CNN
+	1    4675 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F989169
+P 4675 3775
+F 0 "#PWR?" H 4675 3525 50  0001 C CNN
+F 1 "GND" H 4680 3602 50  0000 C CNN
+F 2 "" H 4675 3775 50  0001 C CNN
+F 3 "" H 4675 3775 50  0001 C CNN
+	1    4675 3775
+	1    0    0    -1  
+$EndComp
+Text Label 4675 2725 1    50   ~ 0
+HV_ON
+Wire Wire Line
+	4675 2500 4675 2800
+$Comp
+L Device:R R?
+U 1 1 5F98E1B6
+P 7450 3025
+F 0 "R?" V 7350 3025 50  0000 C CNN
+F 1 "10k" V 7450 3025 50  0000 C CNN
+F 2 "" V 7380 3025 50  0001 C CNN
+F 3 "~" H 7450 3025 50  0001 C CNN
+	1    7450 3025
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5F98B2DE
+P 8000 3025
+F 0 "Q?" H 8204 3071 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 8204 2980 50  0000 L CNN
+F 2 "" H 8200 3125 50  0001 C CNN
+F 3 "~" H 8000 3025 50  0001 C CNN
+	1    8000 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F98F10A
+P 8100 3225
+F 0 "#PWR?" H 8100 2975 50  0001 C CNN
+F 1 "GND" H 8105 3052 50  0000 C CNN
+F 2 "" H 8100 3225 50  0001 C CNN
+F 3 "" H 8100 3225 50  0001 C CNN
+	1    8100 3225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3025 7600 3025
+Text Label 8375 2700 2    50   ~ 0
+RED_ON
+Wire Wire Line
+	8100 2700 8100 2825
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5F996B98
+P 9050 2700
+F 0 "J?" H 9130 2692 50  0000 L CNN
+F 1 "Conn_01x02" H 9130 2601 50  0000 L CNN
+F 2 "" H 9050 2700 50  0001 C CNN
+F 3 "~" H 9050 2700 50  0001 C CNN
+	1    9050 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F99726C
+P 8850 2975
+F 0 "#PWR?" H 8850 2725 50  0001 C CNN
+F 1 "GND" H 8855 2802 50  0000 C CNN
+F 2 "" H 8850 2975 50  0001 C CNN
+F 3 "" H 8850 2975 50  0001 C CNN
+	1    8850 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2975 8850 2800
+Wire Wire Line
+	4675 3600 4675 3775
+Wire Wire Line
+	4175 3400 3850 3400
+Wire Wire Line
+	3850 3400 3850 2800
+Wire Wire Line
+	3850 2800 4675 2800
+Connection ~ 4675 2800
+Text Label 3975 3000 0    50   ~ 0
+pass
+Wire Wire Line
+	4175 3000 3975 3000
+Text Label 5225 3450 0    50   ~ 0
+pass
+$Comp
+L Device:R R?
+U 1 1 5F99A37B
+P 5675 3300
+F 0 "R?" H 5745 3346 50  0000 L CNN
+F 1 "R" H 5745 3255 50  0000 L CNN
+F 2 "" V 5605 3300 50  0001 C CNN
+F 3 "~" H 5675 3300 50  0001 C CNN
+	1    5675 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F99ABB4
+P 5675 3000
+F 0 "R?" H 5745 3046 50  0000 L CNN
+F 1 "R" H 5745 2955 50  0000 L CNN
+F 2 "" V 5605 3000 50  0001 C CNN
+F 3 "~" H 5675 3000 50  0001 C CNN
+	1    5675 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 5675 3150
+Wire Wire Line
+	5675 2850 5675 2800
+Wire Wire Line
+	5675 2800 4675 2800
+Wire Wire Line
+	5175 3200 5175 3150
+Wire Wire Line
+	5175 3150 5675 3150
+Wire Wire Line
+	5175 3450 5175 3400
+Wire Wire Line
+	5175 3450 5675 3450
+Text Label 5550 3000 2    50   ~ 0
+LED_OUT
+Wire Wire Line
+	5550 3000 5175 3000
+Text Label 6950 3025 0    50   ~ 0
+LED_OUT
+Wire Wire Line
+	6950 3025 7300 3025
+Wire Wire Line
+	8850 2700 8100 2700
+$Comp
+L power:VCC #PWR?
+U 1 1 5F9896F1
+P 4675 2500
+F 0 "#PWR?" H 4675 2350 50  0001 C CNN
+F 1 "VCC" H 4690 2673 50  0000 C CNN
+F 2 "" H 4675 2500 50  0001 C CNN
+F 3 "" H 4675 2500 50  0001 C CNN
+	1    4675 2500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

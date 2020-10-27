@@ -1,0 +1,280 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer:LM555xM U?
+U 1 1 5F9882FA
+P 5225 3150
+F 0 "U?" H 5225 3100 50  0000 C CNN
+F 1 "LM555xM" H 5225 3200 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6075 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 6075 2750 50  0001 C CNN
+	1    5225 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F989169
+P 5225 4025
+F 0 "#PWR?" H 5225 3775 50  0001 C CNN
+F 1 "GND" H 5230 3852 50  0000 C CNN
+F 2 "" H 5225 4025 50  0001 C CNN
+F 3 "" H 5225 4025 50  0001 C CNN
+	1    5225 4025
+	1    0    0    -1  
+$EndComp
+Text Label 5225 2675 1    50   ~ 0
+HV_ON
+Wire Wire Line
+	5225 2450 5225 2750
+$Comp
+L Device:R R?
+U 1 1 5F98E1B6
+P 7175 3050
+F 0 "R?" V 7075 3050 50  0000 C CNN
+F 1 "10k" V 7175 3050 50  0000 C CNN
+F 2 "" V 7105 3050 50  0001 C CNN
+F 3 "~" H 7175 3050 50  0001 C CNN
+	1    7175 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5F98B2DE
+P 7725 3050
+F 0 "Q?" H 7929 3096 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 7929 3005 50  0000 L CNN
+F 2 "" H 7925 3150 50  0001 C CNN
+F 3 "~" H 7725 3050 50  0001 C CNN
+	1    7725 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F98F10A
+P 7825 3250
+F 0 "#PWR?" H 7825 3000 50  0001 C CNN
+F 1 "GND" H 7830 3077 50  0000 C CNN
+F 2 "" H 7825 3250 50  0001 C CNN
+F 3 "" H 7825 3250 50  0001 C CNN
+	1    7825 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7525 3050 7325 3050
+Text Label 8100 2725 2    50   ~ 0
+RED_ON
+Wire Wire Line
+	7825 2725 7825 2850
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5F996B98
+P 8775 2725
+F 0 "J?" H 8855 2717 50  0000 L CNN
+F 1 "Conn_01x02" H 8855 2626 50  0000 L CNN
+F 2 "" H 8775 2725 50  0001 C CNN
+F 3 "~" H 8775 2725 50  0001 C CNN
+	1    8775 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F99726C
+P 8575 3000
+F 0 "#PWR?" H 8575 2750 50  0001 C CNN
+F 1 "GND" H 8580 2827 50  0000 C CNN
+F 2 "" H 8575 3000 50  0001 C CNN
+F 3 "" H 8575 3000 50  0001 C CNN
+	1    8575 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8575 3000 8575 2825
+Wire Wire Line
+	4725 3350 4400 3350
+Wire Wire Line
+	4400 3350 4400 2750
+Wire Wire Line
+	4400 2750 5225 2750
+Connection ~ 5225 2750
+Text Label 4500 2950 0    50   ~ 0
+pass
+Wire Wire Line
+	4725 2950 4525 2950
+Text Label 5775 3400 0    50   ~ 0
+pass
+$Comp
+L Device:R R?
+U 1 1 5F99A37B
+P 6225 3250
+F 0 "R?" H 6295 3296 50  0000 L CNN
+F 1 "R" H 6295 3205 50  0000 L CNN
+F 2 "" V 6155 3250 50  0001 C CNN
+F 3 "~" H 6225 3250 50  0001 C CNN
+	1    6225 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F99ABB4
+P 6225 2950
+F 0 "R?" H 6295 2996 50  0000 L CNN
+F 1 "R" H 6295 2905 50  0000 L CNN
+F 2 "" V 6155 2950 50  0001 C CNN
+F 3 "~" H 6225 2950 50  0001 C CNN
+	1    6225 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 6225 3100
+Wire Wire Line
+	6225 2800 6225 2750
+Wire Wire Line
+	6225 2750 5225 2750
+Wire Wire Line
+	5725 3150 5725 3100
+Wire Wire Line
+	5725 3100 6225 3100
+Wire Wire Line
+	5725 3400 5725 3350
+Wire Wire Line
+	5725 3400 6225 3400
+Text Label 6100 2950 2    50   ~ 0
+LED_OUT
+Wire Wire Line
+	6100 2950 5725 2950
+Text Label 6675 3050 0    50   ~ 0
+LED_OUT
+Wire Wire Line
+	6675 3050 7025 3050
+Wire Wire Line
+	8575 2725 7825 2725
+$Comp
+L power:VCC #PWR?
+U 1 1 5F9896F1
+P 5225 2450
+F 0 "#PWR?" H 5225 2300 50  0001 C CNN
+F 1 "VCC" H 5240 2623 50  0000 C CNN
+F 2 "" H 5225 2450 50  0001 C CNN
+F 3 "" H 5225 2450 50  0001 C CNN
+	1    5225 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:LTV-817 U?
+U 1 1 5F9B065A
+P 2150 3075
+F 0 "U?" H 2150 3400 50  0000 C CNN
+F 1 "LTV-817" H 2150 3309 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 1950 2875 50  0001 L CIN
+F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 2150 2975 50  0001 L CNN
+	1    2150 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5F9B1391
+P 2625 2975
+F 0 "#PWR?" H 2625 2825 50  0001 C CNN
+F 1 "+12V" H 2640 3148 50  0000 C CNN
+F 2 "" H 2625 2975 50  0001 C CNN
+F 3 "" H 2625 2975 50  0001 C CNN
+	1    2625 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2625 2975 2450 2975
+$Comp
+L power:GND #PWR?
+U 1 1 5F9B2348
+P 2450 3750
+F 0 "#PWR?" H 2450 3500 50  0001 C CNN
+F 1 "GND" H 2455 3577 50  0000 C CNN
+F 2 "" H 2450 3750 50  0001 C CNN
+F 3 "" H 2450 3750 50  0001 C CNN
+	1    2450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F9B2DED
+P 2450 3450
+F 0 "R?" H 2520 3496 50  0000 L CNN
+F 1 "10k" H 2520 3405 50  0000 L CNN
+F 2 "" V 2380 3450 50  0001 C CNN
+F 3 "~" H 2450 3450 50  0001 C CNN
+	1    2450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3600 2450 3750
+Wire Wire Line
+	2450 3175 2450 3300
+$Comp
+L power:VCC #PWR?
+U 1 1 5F9B410B
+P 2850 3175
+F 0 "#PWR?" H 2850 3025 50  0001 C CNN
+F 1 "VCC" H 2865 3348 50  0000 C CNN
+F 2 "" H 2850 3175 50  0001 C CNN
+F 3 "" H 2850 3175 50  0001 C CNN
+	1    2850 3175
+	1    0    0    -1  
+$EndComp
+Text Label 2775 3175 2    50   ~ 0
+HV_ON
+Connection ~ 2450 3175
+Wire Wire Line
+	2450 3175 2850 3175
+$Comp
+L Device:C C?
+U 1 1 5F9C368D
+P 5725 3725
+F 0 "C?" H 5840 3771 50  0000 L CNN
+F 1 "1u" H 5840 3680 50  0000 L CNN
+F 2 "" H 5763 3575 50  0001 C CNN
+F 3 "~" H 5725 3725 50  0001 C CNN
+	1    5725 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5725 3875 5225 3875
+Wire Wire Line
+	5225 3550 5225 3875
+Connection ~ 5225 3875
+Wire Wire Line
+	5225 3875 5225 4025
+Wire Wire Line
+	5725 3575 5725 3400
+Connection ~ 5725 3400
+$Comp
+L Device:C C?
+U 1 1 5F9C8A14
+P 4650 3675
+F 0 "C?" H 4765 3721 50  0000 L CNN
+F 1 "0.1u" H 4765 3630 50  0000 L CNN
+F 2 "" H 4688 3525 50  0001 C CNN
+F 3 "~" H 4650 3675 50  0001 C CNN
+	1    4650 3675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3525 4650 3150
+Wire Wire Line
+	4650 3150 4725 3150
+Wire Wire Line
+	4650 3825 4650 3875
+Wire Wire Line
+	4650 3875 5225 3875
+$EndSCHEMATC
