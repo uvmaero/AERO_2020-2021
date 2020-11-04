@@ -42,66 +42,49 @@ Wire Wire Line
 $Comp
 L Device:R R5
 U 1 1 5F98E1B6
-P 7175 3050
-F 0 "R5" V 7075 3050 50  0000 C CNN
-F 1 "10k" V 7175 3050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7105 3050 50  0001 C CNN
-F 3 "~" H 7175 3050 50  0001 C CNN
-	1    7175 3050
+P 7500 3050
+F 0 "R5" V 7400 3050 50  0000 C CNN
+F 1 "10k" V 7500 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7430 3050 50  0001 C CNN
+F 3 "~" H 7500 3050 50  0001 C CNN
+	1    7500 3050
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:Q_NMOS_GDS Q1
 U 1 1 5F98B2DE
-P 7725 3050
-F 0 "Q1" H 7929 3096 50  0000 L CNN
-F 1 "Q_NMOS_GDS" H 7929 3005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 7925 3150 50  0001 C CNN
-F 3 "~" H 7725 3050 50  0001 C CNN
-	1    7725 3050
-	1    0    0    -1  
+P 7950 3450
+F 0 "Q1" H 8154 3496 50  0000 L CNN
+F 1 "040N03LG" H 8154 3405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 8150 3550 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Infineon%20PDFs/IPD040N03LG_rev1.01.pdf" H 7950 3450 50  0001 C CNN
+	1    7950 3450
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5F98F10A
-P 7825 3250
-F 0 "#PWR0102" H 7825 3000 50  0001 C CNN
-F 1 "GND" H 7830 3077 50  0000 C CNN
-F 2 "" H 7825 3250 50  0001 C CNN
-F 3 "" H 7825 3250 50  0001 C CNN
-	1    7825 3250
+P 8050 3750
+F 0 "#PWR0102" H 8050 3500 50  0001 C CNN
+F 1 "GND" H 8055 3577 50  0000 C CNN
+F 2 "" H 8050 3750 50  0001 C CNN
+F 3 "" H 8050 3750 50  0001 C CNN
+	1    8050 3750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7525 3050 7325 3050
-Text Label 8100 2725 2    50   ~ 0
+Text Label 8650 2850 0    50   ~ 0
 RED_ON
-Wire Wire Line
-	7825 2725 7825 2850
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5F996B98
-P 8775 2725
-F 0 "J3" H 8855 2717 50  0000 L CNN
-F 1 "Conn_01x02" H 8855 2626 50  0000 L CNN
-F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770866-x_1x02_P4.14mm_Vertical" H 8775 2725 50  0001 C CNN
-F 3 "~" H 8775 2725 50  0001 C CNN
-	1    8775 2725
+P 9200 2850
+F 0 "J3" H 9280 2842 50  0000 L CNN
+F 1 "172165-1" H 9280 2751 50  0000 L CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770866-x_1x02_P4.14mm_Vertical" H 9200 2850 50  0001 C CNN
+F 3 "~" H 9200 2850 50  0001 C CNN
+	1    9200 2850
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 5F99726C
-P 8575 3000
-F 0 "#PWR0103" H 8575 2750 50  0001 C CNN
-F 1 "GND" H 8580 2827 50  0000 C CNN
-F 2 "" H 8575 3000 50  0001 C CNN
-F 3 "" H 8575 3000 50  0001 C CNN
-	1    8575 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8575 3000 8575 2825
 Wire Wire Line
 	4725 3350 4400 3350
 Wire Wire Line
@@ -149,15 +132,13 @@ Wire Wire Line
 Wire Wire Line
 	5725 3400 6225 3400
 Text Label 6100 2950 2    50   ~ 0
-LED_OUT
+555_OUT
 Wire Wire Line
 	6100 2950 5725 2950
-Text Label 6675 3050 0    50   ~ 0
-LED_OUT
+Text Label 7000 3050 0    50   ~ 0
+555_OUT
 Wire Wire Line
-	6675 3050 7025 3050
-Wire Wire Line
-	8575 2725 7825 2725
+	7000 3050 7350 3050
 $Comp
 L power:VCC #PWR0104
 U 1 1 5F9896F1
@@ -279,42 +260,15 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5F9BB97B
-P 1325 2325
-F 0 "J1" H 1243 2000 50  0000 C CNN
-F 1 "Conn_01x02" H 1243 2091 50  0000 C CNN
-F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770866-x_1x02_P4.14mm_Vertical" H 1325 2325 50  0001 C CNN
-F 3 "~" H 1325 2325 50  0001 C CNN
-	1    1325 2325
+P 1275 2375
+F 0 "J1" H 1193 2050 50  0000 C CNN
+F 1 "Conn_01x02" H 1193 2141 50  0000 C CNN
+F 2 "Connector_Hirose:Hirose_DF63R-2P-3.96DSA_1x02_P3.96mm_Vertical" H 1275 2375 50  0001 C CNN
+F 3 "~" H 1275 2375 50  0001 C CNN
+	1    1275 2375
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1525 2225 1525 2275
-Wire Wire Line
-	1525 2275 1850 2275
-Wire Wire Line
-	1850 2275 1850 2400
-Connection ~ 1525 2275
-Wire Wire Line
-	1525 2275 1525 2325
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5F9BEA2F
-P 1325 3225
-F 0 "J2" H 1243 2900 50  0000 C CNN
-F 1 "Conn_01x02" H 1243 2991 50  0000 C CNN
-F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770866-x_1x02_P4.14mm_Vertical" H 1325 3225 50  0001 C CNN
-F 3 "~" H 1325 3225 50  0001 C CNN
-	1    1325 3225
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1525 3125 1525 3175
-Wire Wire Line
-	1850 3175 1525 3175
-Connection ~ 1525 3175
-Wire Wire Line
-	1525 3175 1525 3225
-Text Label 1575 3175 0    50   ~ 0
+Text Label 1675 3175 0    50   ~ 0
 HV-
 Text Label 1625 2275 0    50   ~ 0
 HV+
@@ -326,41 +280,30 @@ Wire Notes Line width 20
 	975  1400 975  4325
 Wire Notes Line width 20
 	975  4325 2200 4325
-Text Notes 1350 1575 0    50   ~ 0
+Text Notes 1225 1800 0    71   ~ 14
 High Voltage
 Wire Wire Line
 	4500 2950 4725 2950
 $Comp
-L Connector_Generic:Conn_01x02 J4
-U 1 1 5F9D59EC
-P 8775 3550
-F 0 "J4" H 8855 3542 50  0000 L CNN
-F 1 "Conn_01x02" H 8855 3451 50  0000 L CNN
-F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770866-x_1x02_P4.14mm_Vertical" H 8775 3550 50  0001 C CNN
-F 3 "~" H 8775 3550 50  0001 C CNN
-	1    8775 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR0108
 U 1 1 5F9D6F6B
-P 8575 3550
-F 0 "#PWR0108" H 8575 3400 50  0001 C CNN
-F 1 "+12V" H 8590 3723 50  0000 C CNN
-F 2 "" H 8575 3550 50  0001 C CNN
-F 3 "" H 8575 3550 50  0001 C CNN
-	1    8575 3550
+P 2525 5125
+F 0 "#PWR0108" H 2525 4975 50  0001 C CNN
+F 1 "+12V" H 2540 5298 50  0000 C CNN
+F 2 "" H 2525 5125 50  0001 C CNN
+F 3 "" H 2525 5125 50  0001 C CNN
+	1    2525 5125
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0109
 U 1 1 5F9D73CE
-P 8575 3650
-F 0 "#PWR0109" H 8575 3400 50  0001 C CNN
-F 1 "GND" H 8580 3477 50  0000 C CNN
-F 2 "" H 8575 3650 50  0001 C CNN
-F 3 "" H 8575 3650 50  0001 C CNN
-	1    8575 3650
+P 2525 5225
+F 0 "#PWR0109" H 2525 4975 50  0001 C CNN
+F 1 "GND" H 2530 5052 50  0000 C CNN
+F 2 "" H 2525 5225 50  0001 C CNN
+F 3 "" H 2525 5225 50  0001 C CNN
+	1    2525 5225
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -386,4 +329,101 @@ F 3 "~" H 1250 4950 50  0001 C CNN
 	1    1250 4950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R6
+U 1 1 5FA1ACEA
+P 8275 3600
+F 0 "R6" V 8175 3600 50  0000 C CNN
+F 1 "0.75" V 8275 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 8205 3600 50  0001 C CNN
+F 3 "~" H 8275 3600 50  0001 C CNN
+	1    8275 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1850 2275 1850 2400
+Wire Wire Line
+	1850 3175 1575 3175
+Wire Wire Line
+	1475 2275 1850 2275
+Wire Wire Line
+	1575 3175 1575 2375
+Wire Wire Line
+	1575 2375 1475 2375
+$Comp
+L power:+12V #PWR0103
+U 1 1 5FA35B57
+P 9200 3250
+F 0 "#PWR0103" H 9200 3100 50  0001 C CNN
+F 1 "+12V" H 9215 3423 50  0000 C CNN
+F 2 "" H 9200 3250 50  0001 C CNN
+F 3 "" H 9200 3250 50  0001 C CNN
+	1    9200 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 3250 9000 3250
+Wire Wire Line
+	9000 2950 9000 3250
+$Comp
+L Device:Q_NMOS_GDS Q2
+U 1 1 5FA4B7C9
+P 8175 3050
+F 0 "Q2" H 8379 3096 50  0000 L CNN
+F 1 "040N03LG" H 8379 3005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 8375 3150 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Infineon%20PDFs/IPD040N03LG_rev1.01.pdf" H 8175 3050 50  0001 C CNN
+	1    8175 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3450 8275 3450
+Wire Wire Line
+	8275 3450 8275 3250
+Connection ~ 8275 3450
+Wire Wire Line
+	8275 3750 8050 3750
+Wire Wire Line
+	7850 3750 7850 3650
+Connection ~ 8050 3750
+Wire Wire Line
+	8050 3750 7850 3750
+Wire Wire Line
+	8275 2850 9000 2850
+Wire Wire Line
+	7650 3050 7850 3050
+Wire Wire Line
+	7850 3250 7850 3050
+Connection ~ 7850 3050
+Wire Wire Line
+	7850 3050 7975 3050
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5FA7ECF0
+P 2725 5125
+F 0 "J2" H 2805 5117 50  0000 L CNN
+F 1 "172165-1" H 2805 5026 50  0000 L CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770866-x_1x02_P4.14mm_Vertical" H 2725 5125 50  0001 C CNN
+F 3 "~" H 2725 5125 50  0001 C CNN
+	1    2725 5125
+	1    0    0    -1  
+$EndComp
+Text Notes 2650 4800 0    98   ~ 20
+GLV
+Wire Notes Line width 24
+	2325 4575 2325 5550
+Wire Notes Line width 24
+	2325 5550 3250 5550
+Wire Notes Line width 24
+	3250 5550 3250 4575
+Wire Notes Line width 24
+	3250 4575 2325 4575
+Text Notes 1125 4825 0    50   ~ 0
+M3 Mounting\nHole
+Text Notes 7875 2775 0    50   ~ 0
+CC Output
+Text Notes 8525 3675 0    50   ~ 0
+Change R6 for \nCurrent Rating
+Text Notes 9275 2725 0    50   ~ 0
+LED Connector\n
 $EndSCHEMATC
