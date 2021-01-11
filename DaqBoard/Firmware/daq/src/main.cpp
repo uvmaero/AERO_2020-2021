@@ -1,6 +1,7 @@
 /**
  * Copyright 2020, George Spearing, UVM AERO
- * Da 
+ * Data Acquisition Board 
+ * (Rear DAQ w/ fan and brake control)
  */
 
 
