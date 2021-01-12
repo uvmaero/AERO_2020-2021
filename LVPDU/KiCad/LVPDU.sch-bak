@@ -309,4 +309,26 @@ Text Label 5175 4175 0    50   ~ 0
 BATT_IN
 Wire Wire Line
 	5175 4175 6000 4175
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6000AF10
+P 5925 6975
+F 0 "H?" H 6025 7021 50  0000 L CNN
+F 1 "MountingHole" H 6025 6930 50  0000 L CNN
+F 2 "" H 5925 6975 50  0001 C CNN
+F 3 "~" H 5925 6975 50  0001 C CNN
+	1    5925 6975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6000C4CB
+P 5925 7375
+F 0 "H?" H 6025 7421 50  0000 L CNN
+F 1 "MountingHole" H 6025 7330 50  0000 L CNN
+F 2 "" H 5925 7375 50  0001 C CNN
+F 3 "~" H 5925 7375 50  0001 C CNN
+	1    5925 7375
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Interface_CAN_LIN:MCP2515-xSO U?
+L Interface_CAN_LIN:MCP2515-xSO U3
 U 1 1 5FFBACF4
 P 4425 4050
-F 0 "U?" H 4900 4950 50  0000 C CNN
+F 0 "U3" H 4900 4950 50  0000 C CNN
 F 1 "MCP2515-xSO" H 4925 4850 50  0000 C CNN
 F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 4425 3150 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 4525 3250 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 4525 3250 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Interface_CAN_LIN:MCP2551-I-SN U?
+L Interface_CAN_LIN:MCP2551-I-SN U4
 U 1 1 5FFBACF5
 P 6525 3650
-F 0 "U?" H 6950 4150 50  0000 C CNN
+F 0 "U4" H 6950 4150 50  0000 C CNN
 F 1 "MCP2551-I-SN" H 6900 4050 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6525 3150 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 6525 3650 50  0001 C CNN
@@ -69,12 +69,12 @@ F 3 "" H 5450 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C5
 U 1 1 6011BDCB
 P 3950 2925
-F 0 "C?" H 4065 2971 50  0000 L CNN
+F 0 "C5" H 4065 2971 50  0000 L CNN
 F 1 "0.1u" H 4065 2880 50  0000 L CNN
-F 2 "" H 3988 2775 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3988 2775 50  0001 C CNN
 F 3 "~" H 3950 2925 50  0001 C CNN
 	1    3950 2925
 	1    0    0    -1  
@@ -96,12 +96,12 @@ Wire Wire Line
 	3950 2775 4425 2775
 Connection ~ 4425 2775
 $Comp
-L Device:R R?
+L Device:R R4
 U 1 1 5FFBAD04
 P 5250 4650
-F 0 "R?" V 5150 4650 50  0000 C CNN
+F 0 "R4" V 5150 4650 50  0000 C CNN
 F 1 "10K" V 5250 4650 50  0000 C CNN
-F 2 "" V 5180 4650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5180 4650 50  0001 C CNN
 F 3 "~" H 5250 4650 50  0001 C CNN
 	1    5250 4650
 	0    1    1    0   
@@ -142,12 +142,12 @@ F 3 "" H 6525 2775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C6
 U 1 1 60014BBC
 P 6050 2925
-F 0 "C?" H 6165 2971 50  0000 L CNN
+F 0 "C6" H 6165 2971 50  0000 L CNN
 F 1 "0.1u" H 6165 2880 50  0000 L CNN
-F 2 "" H 6088 2775 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6088 2775 50  0001 C CNN
 F 3 "~" H 6050 2925 50  0001 C CNN
 	1    6050 2925
 	1    0    0    -1  
@@ -208,12 +208,12 @@ F 3 "" H 3450 4825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R5
 U 1 1 6011BDD0
 P 7600 3650
-F 0 "R?" H 7670 3696 50  0000 L CNN
+F 0 "R5" H 7670 3696 50  0000 L CNN
 F 1 "120" V 7600 3575 50  0000 L CNN
-F 2 "" V 7530 3650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7530 3650 50  0001 C CNN
 F 3 "~" H 7600 3650 50  0001 C CNN
 	1    7600 3650
 	1    0    0    -1  
@@ -237,12 +237,12 @@ Wire Wire Line
 Wire Wire Line
 	3600 3450 3825 3450
 $Comp
-L Device:Resonator Y?
+L Device:Resonator Y1
 U 1 1 6011BDC0
 P 3450 4625
-F 0 "Y?" H 3450 4873 50  0000 C CNN
+F 0 "Y1" H 3450 4873 50  0000 C CNN
 F 1 "16MHz" H 3450 4782 50  0000 C CNN
-F 2 "" H 3425 4625 50  0001 C CNN
+F 2 "AERO_CUSTOM:Resonator_SMD_muRata_CSTxExxV-3Pin_3.0x1.1mm_HandSoldering" H 3425 4625 50  0001 C CNN
 F 3 "~" H 3425 4625 50  0001 C CNN
 	1    3450 4625
 	1    0    0    -1  
