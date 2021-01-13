@@ -126,10 +126,8 @@ Text Label 5125 3450 0    50   ~ 0
 RXCAN
 Text Label 5125 3550 0    50   ~ 0
 TXCAN
-Text Label 5375 4050 2    50   ~ 0
-CAN_INT
 Wire Wire Line
-	5375 4050 5025 4050
+	5200 4050 5025 4050
 $Comp
 L power:+5V #PWR0135
 U 1 1 5FFBAD05
@@ -269,4 +267,6 @@ Wire Wire Line
 Connection ~ 7600 3500
 Wire Wire Line
 	7600 3500 7875 3500
+Text HLabel 5200 4050 2    50   Input ~ 0
+CAN_INT
 $EndSCHEMATC
