@@ -1096,4 +1096,6 @@ Text Label 4125 1675 2    50   ~ 0
 CAN-
 Text Label 4125 1775 2    50   ~ 0
 CAN+
+Text Notes 7075 6875 0    50   ~ 0
+Left Side Dash\n- Temperature LED\n- LCD display output
 $EndSCHEMATC

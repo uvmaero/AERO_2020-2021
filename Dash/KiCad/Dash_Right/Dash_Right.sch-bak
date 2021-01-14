@@ -892,12 +892,8 @@ F 3 "" H 8750 1700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8750 1700 8425 1700
-Text Label 8650 1800 2    50   ~ 0
-CANH
 Wire Wire Line
 	8650 1800 8425 1800
-Text Label 8650 1900 2    50   ~ 0
-CANL
 Wire Wire Line
 	8650 1900 8425 1900
 Wire Notes Line
@@ -1047,4 +1043,10 @@ Text Label 9850 5250 0    50   ~ 0
 CAN+
 Text Label 9850 5350 0    50   ~ 0
 CAN-
+Text Label 8650 1900 2    50   ~ 0
+CAN+
+Text Label 8650 1800 2    50   ~ 0
+CAN-
+Text Notes 7025 7075 0    50   ~ 0
+Right Side Dash\n- Fault Indicators\n- Regen Settings\n- Direction, Cooling switches\n- Precharge\n- Start button
 $EndSCHEMATC

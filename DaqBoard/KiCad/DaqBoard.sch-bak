@@ -520,11 +520,11 @@ Text Label 10050 2825 0    50   ~ 0
 SENSOR_4
 Wire Wire Line
 	10475 2825 10050 2825
-Text Label 10050 3125 0    50   ~ 0
+Text Label 10050 3025 0    50   ~ 0
 SENSOR_1
 Wire Wire Line
 	10475 3125 10050 3125
-Text Label 10050 3025 0    50   ~ 0
+Text Label 10050 3125 0    50   ~ 0
 SENSOR_2
 Wire Wire Line
 	10475 3025 10050 3025
@@ -600,9 +600,9 @@ F 3 "~" H 6200 2375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5775 2475 0    50   ~ 0
-CANH
+CAN+
 Text Label 5775 2375 0    50   ~ 0
-CANL
+CAN-
 Wire Wire Line
 	5775 2475 6000 2475
 Wire Wire Line
@@ -659,17 +659,6 @@ Wire Notes Line
 	6775 2575 5700 2575
 Wire Notes Line
 	5700 2575 5700 2050
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 60178F9F
-P 725 7500
-F 0 "H1" H 825 7546 50  0000 L CNN
-F 1 "MountingHole" H 825 7455 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 725 7500 50  0001 C CNN
-F 3 "~" H 725 7500 50  0001 C CNN
-	1    725  7500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Transistor_FET:PSMN5R2-60YL Q1
 U 1 1 5FFDB6AD

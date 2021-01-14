@@ -513,11 +513,11 @@ DAMPER_R
 Wire Wire Line
 	10050 3825 10475 3825
 Text Label 10050 2925 0    50   ~ 0
-SENSOR_3
+SENSOR_6
 Wire Wire Line
 	10475 2925 10050 2925
 Text Label 10050 2825 0    50   ~ 0
-SENSOR_4
+SENSOR_5
 Wire Wire Line
 	10475 2825 10050 2825
 Text Label 10050 3025 0    50   ~ 0
@@ -748,4 +748,12 @@ Wire Wire Line
 	10025 3625 10475 3625
 Wire Wire Line
 	10025 3525 10475 3525
+Text Notes 10800 2800 0    50   ~ 0
+analog\n
+Text Notes 10800 2900 0    50   ~ 0
+analog\n
+Text Notes 10800 3000 0    50   ~ 0
+digital
+Text Notes 10800 3100 0    50   ~ 0
+digital
 $EndSCHEMATC
