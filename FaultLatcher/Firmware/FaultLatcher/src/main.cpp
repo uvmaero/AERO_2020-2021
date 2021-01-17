@@ -44,11 +44,11 @@ void sendDaqData(){
   // send message
   CAN.sendMsgBuf(ID_FAULTLATCHER_FAULTS, 0, 8, bufToSend);
 
-  // reenable interrupts (interrupts not used, but here for consistency)
-  sei();
-
   // update last send time stamp
   lastSendDaqMessage = millis();
+
+  // reenable interrupts (interrupts not used, but here for consistency)
+  sei();
 
 }
 
