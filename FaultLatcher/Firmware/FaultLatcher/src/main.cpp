@@ -1,6 +1,6 @@
 /** 
  * Copyright 2020, George Spearing, UVM AERO
- * Fault Latcher
+ * Fault Latcher CS5
  * Get faults from TMS 1 & 2, BMS, IMD
  * Clear with push buttons, send values over CAN
  */

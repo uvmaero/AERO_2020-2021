@@ -1,6 +1,6 @@
 /**
  * Copyright 2020, George Spearing, UVM AERO
- * Data Acquisition Board 
+ * Data Acquisition Board CS5
  * (Rear DAQ w/ fan and brake control)
  */
 
