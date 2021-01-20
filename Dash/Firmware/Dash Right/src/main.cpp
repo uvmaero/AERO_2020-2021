@@ -6,6 +6,8 @@
  * Precharge
  */
 
+// TODO: Finish Precharge Function
+
 #include <Arduino.h>
 #include <mcp_can.h>
 

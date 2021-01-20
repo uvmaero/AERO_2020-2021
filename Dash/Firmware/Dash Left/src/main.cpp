@@ -41,6 +41,8 @@ const int numCols = 16; // LCD number of columns
 #define STP16_DELAY 1 // time in us, delay needed for bit-bang operation
 uint16_t ext_leds = 0; // register value
 
+// LED PIN Values fo STP16 chip
+
 // CAN Address Inputs
 // Battery Temp
 // Motor Temp
@@ -48,9 +50,9 @@ uint16_t ext_leds = 0; // register value
 // Battery Voltage
 
 void selfTest();
-void pin_ISR();
-void hello();
-void goodbye();
+void filterCAN(unsigned long canID, unsigned char buf[8]);
+void setLED(int ledNum, bool state);
+void printToLCD(uint8_t menuOption);
 
 void filterCAN(unsigned long canID, unsigned char buf[8]){
   switch(canID){
@@ -59,6 +61,47 @@ void filterCAN(unsigned long canID, unsigned char buf[8]){
     break;
     // motor temp, rinehart temp, battery temp, SOC
   
+  }
+}
+
+// print value to lcd screen
+void print_to_lcd(uint8_t menuOption){
+  switch(menuOption){
+    case 0: // welcome
+      lcd.home();
+      lcd.print("Welcome");
+      lcd.setCursor(2,1);
+      lcd.print("AERO");
+      break;
+    
+    case 1: // battery 
+      lcd.home();
+      lcd.print("Battery Status  ");
+      lcd.setCursor(0,1);
+      lcd.print(uint16_t(batteryVoltage));
+      lcd.print("V     ");
+      lcd.setCursor(10,1);
+      lcd.print(batterySOC);
+      lcd.print("%");
+      break;
+    
+    case 2: // temps
+      lcd.home();
+      lcd.print("Temeratures     ");
+      lcd.setCursor(0,1);
+      lcd.print("B:     ");
+      lcd.setCursor(5,1);
+      lcd.print("M:     ");
+      lcd.setCursor(10,1);
+      lcd.print("C:     ");
+      break;
+    
+    case 3: // self Test
+      lcd.home();
+      lcd.print("     TESTING    ");
+      lcd.setCursor(0,1);
+      lcd.print("     TESTING    ");
+      break;
   }
 }
 
