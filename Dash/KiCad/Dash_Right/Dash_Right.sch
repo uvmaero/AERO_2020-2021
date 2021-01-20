@@ -397,7 +397,7 @@ Connection ~ 9800 6050
 Wire Wire Line
 	9800 5850 9800 5950
 Connection ~ 9800 5950
-Text Label 3200 4575 2    50   ~ 0
+Text Label 3200 2575 2    50   ~ 0
 SENSOR_1
 Wire Wire Line
 	3200 4575 2775 4575
@@ -406,8 +406,8 @@ Wire Wire Line
 Text Label 3150 2775 2    50   ~ 0
 RTD_IND
 Wire Wire Line
-	3150 2575 2775 2575
-Text Label 3150 2575 2    50   ~ 0
+	3200 2575 2775 2575
+Text Label 3200 4575 2    50   ~ 0
 RTD_BTN
 Wire Wire Line
 	3150 2675 2775 2675

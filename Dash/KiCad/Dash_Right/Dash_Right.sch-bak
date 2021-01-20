@@ -500,7 +500,7 @@ F 3 "" H 6000 3975 50  0001 C CNN
 	1    6000 3975
 	1    0    0    -1  
 $EndComp
-Text Notes 5525 3275 0    50   ~ 0
+Text Notes 6200 3275 0    50   ~ 0
 RTD BUZZER
 $Comp
 L Connector_Generic:Conn_01x03 J2
@@ -1047,4 +1047,6 @@ Text Label 8650 1800 2    50   ~ 0
 CAN-
 Text Notes 7025 7075 0    50   ~ 0
 Right Side Dash\n- Fault Indicators\n- Regen Settings\n- Direction, Cooling switches\n- Precharge\n- Start button
+Text Notes 6200 3350 0    50   ~ 0
+Buzzer is +12V
 $EndSCHEMATC
