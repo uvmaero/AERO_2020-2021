@@ -257,8 +257,6 @@ void setEERPOM(){
 
 // create and send Data CAN Message
 void sendRinehartCommand(){
-  // turn off interrupts
-  cli();
 
   // get current pedal value
   sampleACC();
@@ -276,6 +274,11 @@ void sendRinehartCommand(){
       commanded_torque -= brake_torque;
   }
 
+  // if not ready to drive, no torque please.
+  if (!ready_to_drive){
+    commanded_torque = 0;
+  }
+
   // build DAQ Message
   unsigned char bufToSend[8] = {0, 0, 0, 0, 0, 0, 0, 0};
   bufToSend[0] = commanded_torque && 0xFF; // LSB
@@ -289,9 +292,6 @@ void sendRinehartCommand(){
 
   // send message
   CAN.sendMsgBuf(ID_RINEHART_COMMAND, 0, 8, bufToSend);
-
-  // reenable interrupts
-  sei();
 
 }
 
