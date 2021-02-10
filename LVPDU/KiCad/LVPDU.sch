@@ -90,7 +90,7 @@ RADIATOR
 Text Label 9050 2600 0    50   ~ 0
 PUMP
 Text Label 9050 2950 0    50   ~ 0
-12V_OUT
+12V_OUT_1
 Wire Wire Line
 	9050 2950 9725 2950
 Wire Wire Line
@@ -154,25 +154,6 @@ F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&
 	1    6300 4375
 	0    1    -1   0   
 $EndComp
-$Comp
-L Device:Fuse F7
-U 1 1 5FFBD610
-P 9875 3525
-F 0 "F7" V 9678 3525 50  0000 C CNN
-F 1 "3568 Mini Blade" V 9769 3525 50  0000 C CNN
-F 2 "AERO_CUSTOM:Fuseholder_Blade_Mini_Keystone_3568" V 9805 3525 50  0001 C CNN
-F 3 "~" H 9875 3525 50  0001 C CNN
-	1    9875 3525
-	0    1    1    0   
-$EndComp
-Text Label 9350 3525 0    50   ~ 0
-BATT_IN
-Wire Wire Line
-	9350 3525 9725 3525
-Text Label 10350 3525 2    50   ~ 0
-TO_BRB
-Wire Wire Line
-	10350 3525 10025 3525
 Text Label 7050 4575 2    50   ~ 0
 FROM_BRB
 Wire Wire Line
@@ -214,41 +195,35 @@ F 3 "~" H 6275 5600 50  0001 C CNN
 	1    6275 5600
 	1    0    0    -1  
 $EndComp
-Text Label 9550 4225 0    50   ~ 0
+Text Label 9550 5025 0    50   ~ 0
 SHUTDOWN_OUT
 Text Label 9550 4325 0    50   ~ 0
 DAQ
-Text Label 9550 4425 0    50   ~ 0
-RINEHART
-Text Label 9550 4525 0    50   ~ 0
-RADIATOR
 Text Label 9550 4625 0    50   ~ 0
+RINEHART
+Text Label 9550 4425 0    50   ~ 0
+RADIATOR
+Text Label 9550 4225 0    50   ~ 0
 PUMP
+Text Label 9550 4525 0    50   ~ 0
+12V_OUT_1
 Text Label 9550 4725 0    50   ~ 0
-12V_OUT
-Text Label 9550 4925 0    50   ~ 0
-TO_BRB
-Text Label 9550 5125 0    50   ~ 0
 BATT_IN
-Text Label 9550 5025 0    50   ~ 0
-FROM_BRB
+Text Label 9550 5525 0    50   ~ 0
+12V_OUT_2
 Text Label 9550 5325 0    50   ~ 0
 DCDC_IN
-Text Label 9550 4825 0    50   ~ 0
-12V_OUT
-Text Label 9550 5425 0    50   ~ 0
-DCDC_IN
-Text Label 9550 5225 0    50   ~ 0
+Text Label 9550 5125 0    50   ~ 0
 BATT_IN
 $Comp
 L power:GND #PWR0104
 U 1 1 5FFE7EE3
-P 9550 5525
-F 0 "#PWR0104" H 9550 5275 50  0001 C CNN
-F 1 "GND" H 9555 5352 50  0000 C CNN
-F 2 "" H 9550 5525 50  0001 C CNN
-F 3 "" H 9550 5525 50  0001 C CNN
-	1    9550 5525
+P 9400 4925
+F 0 "#PWR0104" H 9400 4675 50  0001 C CNN
+F 1 "GND" H 9405 4752 50  0000 C CNN
+F 2 "" H 9400 4925 50  0001 C CNN
+F 3 "" H 9400 4925 50  0001 C CNN
+	1    9400 4925
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -257,52 +232,40 @@ U 1 1 5FFF0982
 P 10400 4825
 F 0 "J1" H 10480 4817 50  0000 L CNN
 F 1 "Conn_01x14" H 10480 4726 50  0000 L CNN
-F 2 "AERO_CUSTOM:TE_1-776266-1_14pin_Horizontal" H 10400 4825 50  0001 C CNN
+F 2 "AERO_CUSTOM:TE_1-776262-1_14pin_Vertical" H 10400 4825 50  0001 C CNN
 F 3 "~" H 10400 4825 50  0001 C CNN
 	1    10400 4825
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10200 4225 9550 4225
+	10200 5025 9550 5025
 Wire Wire Line
 	10200 4325 9550 4325
 Wire Wire Line
-	9550 4425 10200 4425
+	9550 4625 10200 4625
+Wire Wire Line
+	10200 4425 9550 4425
+Wire Wire Line
+	10200 4225 9550 4225
 Wire Wire Line
 	10200 4525 9550 4525
 Wire Wire Line
-	10200 4625 9550 4625
+	10200 5525 9550 5525
 Wire Wire Line
 	10200 4725 9550 4725
 Wire Wire Line
-	10200 4825 9550 4825
-Wire Wire Line
-	10200 4925 9550 4925
-Wire Wire Line
-	10200 5025 9550 5025
-Wire Wire Line
 	10200 5125 9550 5125
-Wire Wire Line
-	10200 5225 9550 5225
 Wire Wire Line
 	10200 5325 9550 5325
 Wire Wire Line
-	10200 5425 9550 5425
-Wire Wire Line
-	10200 5525 9550 5525
-Text Label 5575 4175 0    50   ~ 0
-MAIN_GLV
-Text Label 6900 5550 2    50   ~ 0
+	10200 4925 9400 4925
+Text Label 8100 5550 2    50   ~ 0
 DCDC_IN
-Wire Wire Line
-	6900 5550 6475 5550
 Wire Wire Line
 	6475 5550 6475 5500
 Wire Wire Line
 	6475 5550 6475 5600
 Connection ~ 6475 5550
-Text Label 5650 5600 0    50   ~ 0
-MAIN_GLV
 Wire Wire Line
 	5650 5600 6125 5600
 Text Label 5175 4175 0    50   ~ 0
@@ -331,4 +294,76 @@ F 3 "~" H 5925 7375 50  0001 C CNN
 	1    5925 7375
 	1    0    0    -1  
 $EndComp
+Text Notes 3875 3025 0    94   ~ 0
+BATT_IN comes directly from the BRB\nShutdown out goes to the rest of the safety loop\nDCDC_IN comes from DCDC through a fuse. Runs in || with BATT_IN\nDAQ out is the LV Boards\nBoth 12V out are extra 12V outputs
+Text Label 9550 5425 0    50   ~ 0
+FROM_BRB
+Text Label 9550 5225 0    50   ~ 0
+TO_BRB
+Wire Wire Line
+	9550 5425 10200 5425
+Wire Wire Line
+	10200 5225 9550 5225
+$Comp
+L Device:Fuse F7
+U 1 1 602183CF
+P 9875 3300
+F 0 "F7" V 9678 3300 50  0000 C CNN
+F 1 "3568 Mini Blade" V 9769 3300 50  0000 C CNN
+F 2 "AERO_CUSTOM:Fuseholder_Blade_Mini_Keystone_3568" V 9805 3300 50  0001 C CNN
+F 3 "~" H 9875 3300 50  0001 C CNN
+	1    9875 3300
+	0    1    1    0   
+$EndComp
+Text Label 9050 3300 0    50   ~ 0
+12V_OUT_2
+Wire Wire Line
+	9050 3300 9725 3300
+Wire Wire Line
+	10350 3300 10025 3300
+Connection ~ 10350 2950
+Wire Wire Line
+	10350 3300 10350 2950
+$Comp
+L Device:Fuse F8
+U 1 1 6021FB68
+P 9900 3800
+F 0 "F8" V 9703 3800 50  0000 C CNN
+F 1 "3568 Mini Blade" V 9794 3800 50  0000 C CNN
+F 2 "AERO_CUSTOM:Fuseholder_Blade_Mini_Keystone_3568" V 9830 3800 50  0001 C CNN
+F 3 "~" H 9900 3800 50  0001 C CNN
+	1    9900 3800
+	0    1    1    0   
+$EndComp
+Text Label 9075 3800 0    50   ~ 0
+BATT_IN
+Wire Wire Line
+	9075 3800 9750 3800
+Wire Wire Line
+	10425 3800 10050 3800
+Text Label 10425 3800 2    50   ~ 0
+TO_BRB
+Text Label 7050 5550 2    50   ~ 0
+DCDC_Fused
+$Comp
+L Device:Fuse F9
+U 1 1 6023B958
+P 7375 5550
+F 0 "F9" V 7178 5550 50  0000 C CNN
+F 1 "3568 Mini Blade" V 7269 5550 50  0000 C CNN
+F 2 "AERO_CUSTOM:Fuseholder_Blade_Mini_Keystone_3568" V 7305 5550 50  0001 C CNN
+F 3 "~" H 7375 5550 50  0001 C CNN
+	1    7375 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6475 5550 7225 5550
+Wire Wire Line
+	7525 5550 8100 5550
+Text Label 5650 5600 0    50   ~ 0
+BATT_IN
+Wire Wire Line
+	10200 4825 9550 4825
+Text Label 9550 4825 0    50   ~ 0
+DCDC_IN
 $EndSCHEMATC
