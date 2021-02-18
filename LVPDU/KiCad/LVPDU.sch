@@ -190,7 +190,7 @@ U 1 1 5FFCA662
 P 6275 5600
 F 0 "D1" H 6300 5881 50  0000 C CNN
 F 1 "D_Schottky_AKA" H 6300 5790 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp" H 6275 5600 50  0001 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 6275 5600 50  0001 C CNN
 F 3 "~" H 6275 5600 50  0001 C CNN
 	1    6275 5600
 	1    0    0    -1  
@@ -281,17 +281,6 @@ F 1 "MountingHole" H 6025 6930 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 5925 6975 50  0001 C CNN
 F 3 "~" H 5925 6975 50  0001 C CNN
 	1    5925 6975
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 6000C4CB
-P 5925 7375
-F 0 "H2" H 6025 7421 50  0000 L CNN
-F 1 "MountingHole" H 6025 7330 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 5925 7375 50  0001 C CNN
-F 3 "~" H 5925 7375 50  0001 C CNN
-	1    5925 7375
 	1    0    0    -1  
 $EndComp
 Text Notes 3875 3025 0    94   ~ 0
