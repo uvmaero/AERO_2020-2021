@@ -357,4 +357,6 @@ Text Label 9550 4825 0    50   ~ 0
 DCDC_IN
 Text Notes 9575 5950 0    50   ~ 0
 All Ampseal Pins\nNeed to Be Gold Plated\nfor Current Rating
+Text Notes 4175 6275 0    50   ~ 0
+TODO: \nAdd fuse for Battery In
 $EndSCHEMATC

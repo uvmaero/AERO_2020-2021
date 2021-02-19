@@ -144,7 +144,7 @@ Connection ~ 10350 1375
 Wire Wire Line
 	10350 1375 10350 1675
 $Comp
-L AERO_custom_symbols:T9VV1K15-12S K1
+L LVPDU-rescue:T9VV1K15-12S-AERO_custom_symbols K1
 U 1 1 5FFBBBA5
 P 6300 4375
 F 0 "K1" V 6767 4375 50  0000 C CNN
@@ -355,4 +355,6 @@ Wire Wire Line
 	10200 4825 9550 4825
 Text Label 9550 4825 0    50   ~ 0
 DCDC_IN
+Text Notes 9575 5950 0    50   ~ 0
+All Ampseal Pins\nNeed to Be Gold Plated\nfor Current Rating
 $EndSCHEMATC

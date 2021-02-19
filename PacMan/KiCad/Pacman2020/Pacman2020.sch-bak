@@ -714,4 +714,6 @@ Wire Wire Line
 Wire Wire Line
 	9725 5675 9725 5875
 Connection ~ 9725 5875
+Text Notes 4825 4425 0    126  ~ 0
+TODO: \nWhat the hell are we doing? \nMake this thing better!!
 $EndSCHEMATC
