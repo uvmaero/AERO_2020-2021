@@ -14,21 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-<<<<<<< HEAD
-L HVPDU-rescue:Vicor_AERO-AERO_custom_symbols-HVPDU-rescue U1
-=======
-L AERO_custom_symbols:Vicor_AERO U1
->>>>>>> master
-U 1 1 602D975A
-P 2600 1625
-F 0 "U1" H 2600 1690 50  0000 C CNN
-F 1 "Vicor_AERO" H 2600 1599 50  0000 C CNN
-F 2 "AERO-footprints:vicor-socket-no-cutouts" H 2600 1625 50  0001 C CNN
-F 3 "" H 2600 1625 50  0001 C CNN
-	1    2600 1625
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x03 J1
 U 1 1 602DA8B7
 P 1200 4050
@@ -64,9 +49,9 @@ Wire Wire Line
 	1750 2425 2100 2425
 Wire Wire Line
 	1750 1825 2100 1825
-Text Label 3775 2325 2    50   ~ 0
+Text Label 3625 2275 2    50   ~ 0
 -DCDC_OUT
-Text Label 3775 1975 2    50   ~ 0
+Text Label 3625 2025 2    50   ~ 0
 +DCDC_OUT
 $Comp
 L Connector_Generic:Conn_01x14 J5
@@ -340,17 +325,17 @@ $EndSheet
 $Comp
 L power:GND #PWR0115
 U 1 1 604AA1AA
-P 3800 2500
-F 0 "#PWR0115" H 3800 2250 50  0001 C CNN
-F 1 "GND" H 3805 2327 50  0000 C CNN
-F 2 "" H 3800 2500 50  0001 C CNN
-F 3 "" H 3800 2500 50  0001 C CNN
-	1    3800 2500
+P 3650 2450
+F 0 "#PWR0115" H 3650 2200 50  0001 C CNN
+F 1 "GND" H 3655 2277 50  0000 C CNN
+F 2 "" H 3650 2450 50  0001 C CNN
+F 3 "" H 3650 2450 50  0001 C CNN
+	1    3650 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 2500 3800 2325
-Text Notes 3625 2900 0    50   ~ 0
+	3650 2450 3650 2275
+Text Notes 3475 2850 0    50   ~ 0
 Reference DCDC \noutput gnd to frame
 Text Notes 1250 4425 0    50   ~ 0
 Input from\nHV Lines
@@ -506,12 +491,20 @@ F 3 "~" H 6300 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3100 1975 3775 1975
+	2950 2025 3625 2025
 Wire Wire Line
-	3100 2325 3800 2325
-<<<<<<< HEAD
+	2950 2275 3650 2275
 Text Notes 900  7025 0    50   ~ 0
 TODO: \nAdd trim, enable and fault\nto DCDC
-=======
->>>>>>> master
+$Comp
+L AERO_custom_symbols:Vicor_AERO U?
+U 1 1 602FA5C0
+P 2500 1675
+F 0 "U?" H 2525 1750 50  0000 C CNN
+F 1 "Vicor_AERO" H 2525 1659 50  0000 C CNN
+F 2 "" H 2500 1675 50  0001 C CNN
+F 3 "" H 2500 1675 50  0001 C CNN
+	1    2500 1675
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
