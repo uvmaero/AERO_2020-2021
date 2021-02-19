@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L HVPDU-rescue:Vicor_AERO-AERO_custom_symbols-HVPDU-rescue U1
+L HVPDU-rescue:Vicor_AERO-AERO_custom_symbols U1
 U 1 1 602D975A
 P 2600 1625
 F 0 "U1" H 2600 1690 50  0000 C CNN
