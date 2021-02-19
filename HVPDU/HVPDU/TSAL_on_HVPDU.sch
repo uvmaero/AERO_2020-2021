@@ -330,17 +330,6 @@ F 3 "" H 4700 2525 50  0001 C CNN
 	1    4700 2525
 	1    0    0    -1  
 $EndComp
-$Comp
-L _NONAME_ U2
-U 1 1 00000000
-P 5225 3150
-F 0 "U2" H 5225 3731 50  0000 C CNN
-F 1 "LM555" H 5225 3640 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5225 3150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 5225 3150 50  0001 C CNN
-	1    5225 3150
-	1    0    0    -1  
-$EndComp
 Text HLabel 9000 2850 2    50   Output ~ 0
 RED_GND
 Text Label 1425 2275 0    50   ~ 0
@@ -362,4 +351,15 @@ GND
 Wire Wire Line
 	2575 3750 2450 3750
 Connection ~ 2450 3750
+$Comp
+L Timer:LM555 U?
+U 1 1 602F6BE1
+P 5225 3150
+F 0 "U?" H 5225 3731 50  0000 C CNN
+F 1 "LM555" H 5225 3640 50  0000 C CNN
+F 2 "" H 5225 3150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 5225 3150 50  0001 C CNN
+	1    5225 3150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
