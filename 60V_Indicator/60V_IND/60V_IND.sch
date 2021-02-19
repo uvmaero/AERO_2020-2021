@@ -83,4 +83,10 @@ F 3 "~" H 3100 2950 50  0001 C CNN
 	1    3100 2950
 	1    0    0    -1  
 $EndComp
+Text Notes 2975 1725 0    50   ~ 0
+HV+\n
+Text Notes 3000 4025 0    50   ~ 0
+HV-\n
+Text Notes 2600 4750 0    50   ~ 0
+TODO: \nChange out three resistors \nfor 1 power resistor\n\nBoard Layout
 $EndSCHEMATC

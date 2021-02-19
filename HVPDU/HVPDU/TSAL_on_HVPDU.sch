@@ -331,7 +331,11 @@ F 3 "" H 4700 2525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+<<<<<<< HEAD
 L HVPDU-rescue:LM555-Timer-HVPDU-rescue U2
+=======
+L Timer:LM555 U2
+>>>>>>> master
 U 1 1 60474D31
 P 5225 3150
 F 0 "U2" H 5225 3731 50  0000 C CNN

@@ -14,11 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-<<<<<<< HEAD
-L HVPDU-rescue:Vicor_AERO-AERO_custom_symbols-HVPDU-rescue U1
-=======
-L AERO_custom_symbols:Vicor_AERO U1
->>>>>>> master
+L HVPDU-rescue:Vicor_AERO-AERO_custom_symbols U1
 U 1 1 602D975A
 P 2600 1625
 F 0 "U1" H 2600 1690 50  0000 C CNN
@@ -509,9 +505,6 @@ Wire Wire Line
 	3100 1975 3775 1975
 Wire Wire Line
 	3100 2325 3800 2325
-<<<<<<< HEAD
 Text Notes 900  7025 0    50   ~ 0
 TODO: \nAdd trim, enable and fault\nto DCDC
-=======
->>>>>>> master
 $EndSCHEMATC
