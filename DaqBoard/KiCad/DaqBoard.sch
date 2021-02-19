@@ -380,14 +380,14 @@ Text Label 3200 3775 2    50   ~ 0
 DAMPER_R
 Wire Wire Line
 	3200 3775 2775 3775
-Text Label 3300 4675 2    50   ~ 0
+Text Label 3300 2675 2    50   ~ 0
 BRAKE_SIG
 Wire Wire Line
 	3300 4575 2775 4575
 Text Label 3300 4575 2    50   ~ 0
 FAN_SIG
 Wire Wire Line
-	3300 4675 2775 4675
+	3300 2675 2775 2675
 Text Label 4500 5250 0    50   ~ 0
 BRAKE_SIG
 Wire Wire Line
@@ -484,10 +484,10 @@ Text Label 3200 2575 2    50   ~ 0
 SENSOR_3
 Wire Wire Line
 	3200 2575 2775 2575
-Text Label 3200 2675 2    50   ~ 0
+Text Label 3200 2775 2    50   ~ 0
 SENSOR_4
 Wire Wire Line
-	3200 2675 2775 2675
+	3200 2775 2775 2775
 Text Label 3200 3875 2    50   ~ 0
 SENSOR_5
 Wire Wire Line
@@ -756,4 +756,8 @@ Text Notes 10800 3000 0    50   ~ 0
 digital
 Text Notes 10800 3100 0    50   ~ 0
 digital
+Text Notes 3525 4575 2    50   ~ 0
+PWM
+Text Notes 3500 2675 2    50   ~ 0
+PWM
 $EndSCHEMATC

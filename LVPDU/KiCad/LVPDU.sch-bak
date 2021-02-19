@@ -144,7 +144,7 @@ Connection ~ 10350 1375
 Wire Wire Line
 	10350 1375 10350 1675
 $Comp
-L AERO_custom_symbols:T9VV1K15-12S K1
+L LVPDU-rescue:T9VV1K15-12S-AERO_custom_symbols K1
 U 1 1 5FFBBBA5
 P 6300 4375
 F 0 "K1" V 6767 4375 50  0000 C CNN
@@ -190,7 +190,7 @@ U 1 1 5FFCA662
 P 6275 5600
 F 0 "D1" H 6300 5881 50  0000 C CNN
 F 1 "D_Schottky_AKA" H 6300 5790 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp" H 6275 5600 50  0001 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 6275 5600 50  0001 C CNN
 F 3 "~" H 6275 5600 50  0001 C CNN
 	1    6275 5600
 	1    0    0    -1  
@@ -218,12 +218,12 @@ BATT_IN
 $Comp
 L power:GND #PWR0104
 U 1 1 5FFE7EE3
-P 9400 5425
-F 0 "#PWR0104" H 9400 5175 50  0001 C CNN
-F 1 "GND" H 9405 5252 50  0000 C CNN
-F 2 "" H 9400 5425 50  0001 C CNN
-F 3 "" H 9400 5425 50  0001 C CNN
-	1    9400 5425
+P 9400 4925
+F 0 "#PWR0104" H 9400 4675 50  0001 C CNN
+F 1 "GND" H 9405 4752 50  0000 C CNN
+F 2 "" H 9400 4925 50  0001 C CNN
+F 3 "" H 9400 4925 50  0001 C CNN
+	1    9400 4925
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -258,7 +258,7 @@ Wire Wire Line
 Wire Wire Line
 	10200 5325 9550 5325
 Wire Wire Line
-	10200 5425 9400 5425
+	10200 4925 9400 4925
 Text Label 8100 5550 2    50   ~ 0
 DCDC_IN
 Wire Wire Line
@@ -283,25 +283,14 @@ F 3 "~" H 5925 6975 50  0001 C CNN
 	1    5925 6975
 	1    0    0    -1  
 $EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 6000C4CB
-P 5925 7375
-F 0 "H2" H 6025 7421 50  0000 L CNN
-F 1 "MountingHole" H 6025 7330 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 5925 7375 50  0001 C CNN
-F 3 "~" H 5925 7375 50  0001 C CNN
-	1    5925 7375
-	1    0    0    -1  
-$EndComp
 Text Notes 3875 3025 0    94   ~ 0
 BATT_IN comes directly from the BRB\nShutdown out goes to the rest of the safety loop\nDCDC_IN comes from DCDC through a fuse. Runs in || with BATT_IN\nDAQ out is the LV Boards\nBoth 12V out are extra 12V outputs
-Text Label 9550 4925 0    50   ~ 0
+Text Label 9550 5425 0    50   ~ 0
 FROM_BRB
 Text Label 9550 5225 0    50   ~ 0
 TO_BRB
 Wire Wire Line
-	9550 4925 10200 4925
+	9550 5425 10200 5425
 Wire Wire Line
 	10200 5225 9550 5225
 $Comp
@@ -366,4 +355,6 @@ Wire Wire Line
 	10200 4825 9550 4825
 Text Label 9550 4825 0    50   ~ 0
 DCDC_IN
+Text Notes 9575 5950 0    50   ~ 0
+All Ampseal Pins\nNeed to Be Gold Plated\nfor Current Rating
 $EndSCHEMATC
