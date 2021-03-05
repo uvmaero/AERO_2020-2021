@@ -24,7 +24,7 @@ F 3 "" H 5225 4025 50  0001 C CNN
 	1    5225 4025
 	1    0    0    -1  
 $EndComp
-Text Label 5225 2675 1    50   ~ 0
+Text Label 5225 2500 1    50   ~ 0
 HV_ON
 $Comp
 L Device:R R5
@@ -295,11 +295,11 @@ Wire Wire Line
 Connection ~ 7850 3050
 Wire Wire Line
 	7850 3050 7975 3050
-Text Notes 7875 2775 0    50   ~ 0
+Text Notes 7750 2750 0    50   ~ 0
 CC Output
 Text Notes 8525 3675 0    50   ~ 0
 Change R6 for \nCurrent Rating
-Text Notes 9475 2700 0    50   ~ 0
+Text Notes 9600 2725 0    50   ~ 0
 To AMPSEAL\nfor TSAL Red Out
 $Comp
 L Device:C C3
@@ -375,6 +375,6 @@ Wire Wire Line
 	8525 2850 8275 2850
 Wire Wire Line
 	8825 2850 9725 2850
-Text Notes 8600 2550 0    39   ~ 0
-Current Limiting \nResistor
+Text Notes 8325 2700 0    39   ~ 0
+Current Limiting Resistor\n(Redundant b/c CC source output)\n(Just In case)
 $EndSCHEMATC

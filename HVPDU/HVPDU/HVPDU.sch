@@ -35,9 +35,9 @@ F 3 "~" H 2400 4325 50  0001 C CNN
 	1    2400 4325
 	0    1    1    0   
 $EndComp
-Text Label 1750 2425 0    50   ~ 0
+Text Label 3125 2725 0    50   ~ 0
 TSV-
-Text Label 1750 1825 0    50   ~ 0
+Text Label 3125 2125 0    50   ~ 0
 TSV+
 Text Notes 3000 4375 0    50   ~ 0
 TSAL power\ntake off\n(Fused)\n
@@ -46,12 +46,12 @@ TSAL_TSV+
 Wire Wire Line
 	2975 4325 2550 4325
 Wire Wire Line
-	1750 2425 2100 2425
+	3125 2725 3475 2725
 Wire Wire Line
-	1750 1825 2100 1825
-Text Label 3625 2275 2    50   ~ 0
+	3125 2125 3475 2125
+Text Label 6525 2625 2    50   ~ 0
 -DCDC_OUT
-Text Label 3625 2025 2    50   ~ 0
+Text Label 6525 2325 2    50   ~ 0
 +DCDC_OUT
 $Comp
 L Connector_Generic:Conn_01x14 J5
@@ -312,58 +312,56 @@ Wire Wire Line
 Text Notes 8975 4375 0    50   ~ 0
 PWR / Signal\nfrom BMS
 $Sheet
-S 6200 3350 1200 650 
+S 6200 4450 1200 650 
 U 60471413
 F0 "TSAL_on_HVPDU" 50
 F1 "TSAL_on_HVPDU.sch" 50
-F2 "RED_GND" O R 7400 3875 50 
-F3 "TSV+_IN" I L 6200 3500 50 
-F4 "TSV-_IN" I L 6200 3850 50 
-F5 "DCDC_12V+" I R 7400 3475 50 
-F6 "GND" B R 7400 3600 50 
+F2 "RED_GND" O R 7400 4975 50 
+F3 "TSV+_IN" I L 6200 4600 50 
+F4 "TSV-_IN" I L 6200 4950 50 
+F5 "DCDC_12V+" I R 7400 4575 50 
+F6 "GND" B R 7400 4700 50 
 $EndSheet
 $Comp
 L power:GND #PWR0115
 U 1 1 604AA1AA
-P 3650 2450
-F 0 "#PWR0115" H 3650 2200 50  0001 C CNN
-F 1 "GND" H 3655 2277 50  0000 C CNN
-F 2 "" H 3650 2450 50  0001 C CNN
-F 3 "" H 3650 2450 50  0001 C CNN
-	1    3650 2450
+P 6525 2625
+F 0 "#PWR0115" H 6525 2375 50  0001 C CNN
+F 1 "GND" H 6530 2452 50  0000 C CNN
+F 2 "" H 6525 2625 50  0001 C CNN
+F 3 "" H 6525 2625 50  0001 C CNN
+	1    6525 2625
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3650 2450 3650 2275
-Text Notes 3475 2850 0    50   ~ 0
+Text Notes 6675 2825 0    50   ~ 0
 Reference DCDC \noutput gnd to frame
 Text Notes 1250 4425 0    50   ~ 0
 Input from\nHV Lines
-Text Label 5750 3500 0    50   ~ 0
+Text Label 5750 4600 0    50   ~ 0
 TSAL_TSV+
 Wire Wire Line
-	5750 3500 6200 3500
-Text Label 5750 3850 0    50   ~ 0
+	5750 4600 6200 4600
+Text Label 5750 4950 0    50   ~ 0
 TSV-
 Wire Wire Line
-	5750 3850 6200 3850
-Text Notes 5200 3725 0    50   ~ 0
+	5750 4950 6200 4950
+Text Notes 5200 4825 0    50   ~ 0
 TSAL Must be powered\ndirectly from TSV
-Text Label 7900 3600 2    50   ~ 0
+Text Label 7900 4700 2    50   ~ 0
 -DCDC_OUT
 Wire Wire Line
-	7900 3600 7400 3600
-Text Label 7900 3475 2    50   ~ 0
+	7900 4700 7400 4700
+Text Label 7900 4575 2    50   ~ 0
 +DCDC_OUT
 Wire Wire Line
-	7900 3475 7400 3475
-Text Notes 7500 3375 0    50   ~ 0
+	7900 4575 7400 4575
+Text Notes 7500 4475 0    50   ~ 0
 TSAL Must be powered\ndirectly from TSV.\nEven LV side
-Text Label 7925 3875 2    50   ~ 0
+Text Label 7925 4975 2    50   ~ 0
 RED_ON_GND
 Wire Wire Line
-	7925 3875 7400 3875
-Text Notes 7500 4050 0    50   ~ 0
+	7925 4975 7400 4975
+Text Notes 7500 5150 0    50   ~ 0
 Blink Blink GND\nfor TSAL
 $Comp
 L Connector_Generic:Conn_01x01 J3
@@ -392,30 +390,13 @@ $EndComp
 Wire Wire Line
 	2550 4675 3625 4675
 Wire Notes Line width 39
-	2575 1125 2575 3350
-Wire Notes Line width 39
-	2575 3350 4600 3350
-Wire Notes Line width 39
 	4600 3350 4600 5450
 Wire Notes Line width 39
 	4600 5450 875  5450
 Wire Notes Line width 39
 	875  5450 875  1125
-Wire Notes Line width 39
-	875  1125 2575 1125
-Text Notes 1625 1375 0    126  ~ 25
+Text Notes 1000 1400 0    126  ~ 25
 HV
-$Comp
-L Mechanical:MountingHole H7
-U 1 1 6053B447
-P 6300 7625
-F 0 "H7" H 6400 7671 50  0000 L CNN
-F 1 "M3" H 6400 7580 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6300 7625 50  0001 C CNN
-F 3 "~" H 6300 7625 50  0001 C CNN
-	1    6300 7625
-	1    0    0    -1  
-$EndComp
 $Comp
 L Mechanical:MountingHole H5
 U 1 1 6053BEC8
@@ -430,12 +411,12 @@ $EndComp
 $Comp
 L Mechanical:MountingHole H6
 U 1 1 6053BED2
-P 5850 7625
-F 0 "H6" H 5950 7671 50  0000 L CNN
-F 1 "M3" H 5950 7580 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 5850 7625 50  0001 C CNN
-F 3 "~" H 5850 7625 50  0001 C CNN
-	1    5850 7625
+P 6375 7225
+F 0 "H6" H 6475 7271 50  0000 L CNN
+F 1 "M3" H 6475 7180 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6375 7225 50  0001 C CNN
+F 3 "~" H 6375 7225 50  0001 C CNN
+	1    6375 7225
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -451,22 +432,6 @@ F 3 "~" H 1200 4775 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1400 4675 2250 4675
-Text Label 1825 4050 2    50   ~ 0
-IMD_TSV+
-Wire Wire Line
-	1825 4050 1400 4050
-Text Label 1825 4775 2    50   ~ 0
-IMD_TSV-
-Wire Wire Line
-	1825 4775 1400 4775
-Text Label 1825 4875 2    50   ~ 0
-SPARE
-Wire Wire Line
-	1825 4875 1400 4875
-Text Label 1825 3950 2    50   ~ 0
-SPARE
-Wire Wire Line
-	1825 3950 1400 3950
 Text Label 9375 4650 0    50   ~ 0
 +DCDC_OUT
 Text Label 9375 4750 0    50   ~ 0
@@ -479,80 +444,219 @@ Text Notes 10200 4650 0    50   ~ 0
 DCDC+ MUST BE \nGOLD PLATED\nFOR CURRENT RATING
 Text Notes 10200 5025 0    50   ~ 0
 GND MUST BE\nGOLD PLATED\nFOR CURRENT RATING
-$Comp
-L Mechanical:MountingHole H8
-U 1 1 605885E7
-P 6300 7250
-F 0 "H8" H 6400 7296 50  0000 L CNN
-F 1 "M3" H 6400 7205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6300 7250 50  0001 C CNN
-F 3 "~" H 6300 7250 50  0001 C CNN
-	1    6300 7250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 2025 3625 2025
-Wire Wire Line
-	2950 2275 3650 2275
-Text Notes 900  7025 0    50   ~ 0
-TODO: \nAdd trim, enable and fault\nto DCDC
-$Comp
-L AERO_custom_symbols:Vicor_AERO U?
-U 1 1 602FA5C0
-P 2500 1675
-F 0 "U?" H 2525 1750 50  0000 C CNN
-F 1 "Vicor_AERO" H 2525 1659 50  0000 C CNN
-F 2 "" H 2500 1675 50  0001 C CNN
-F 3 "" H 2500 1675 50  0001 C CNN
-	1    2500 1675
-	1    0    0    -1  
-$EndComp
-Text Label 1850 1975 0    50   ~ 0
+Text Label 3225 2275 0    50   ~ 0
 TR
-Wire Wire Line
-	1850 1975 2100 1975
-Text Label 1850 2125 0    50   ~ 0
+Text Label 3225 2425 0    50   ~ 0
 EN
-Wire Wire Line
-	1850 2125 2100 2125
-Text Label 1850 2275 0    50   ~ 0
+Text Label 3225 2575 0    50   ~ 0
 FT
-Wire Wire Line
-	1850 2275 2100 2275
-Text Label 4675 1300 0    50   ~ 0
-TR
-Wire Wire Line
-	4675 1300 4925 1300
-Text Label 4675 1450 0    50   ~ 0
-EN
-Wire Wire Line
-	4675 1450 4925 1450
-Text Label 4675 1600 0    50   ~ 0
-FT
-Wire Wire Line
-	4675 1600 4925 1600
-Text Notes 4675 1025 0    79   ~ 0
+Text Notes 1875 1400 0    79   ~ 0
 Vicor Settings
 $Comp
-L Device:R_POT_TRIM RV?
+L Device:R_POT_TRIM RV1
 U 1 1 603539E0
-P 5475 1300
-F 0 "RV?" V 5360 1300 50  0000 C CNN
-F 1 "R_POT_TRIM" V 5269 1300 50  0000 C CNN
-F 2 "" H 5475 1300 50  0001 C CNN
-F 3 "~" H 5475 1300 50  0001 C CNN
-	1    5475 1300
+P 2025 1850
+F 0 "RV1" H 2400 1975 50  0000 C CNN
+F 1 "R_POT_TRIM" H 2400 2075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2025 1850 50  0001 C CNN
+F 3 "~" H 2025 1850 50  0001 C CNN
+	1    2025 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 60355426
+P 2075 2425
+F 0 "SW1" H 2225 2350 50  0000 C CNN
+F 1 "SW_SPST" H 1925 2350 50  0000 C CNN
+F 2 "" H 2075 2425 50  0001 C CNN
+F 3 "~" H 2075 2425 50  0001 C CNN
+	1    2075 2425
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4325 2325 4550 2325
+Wire Wire Line
+	4325 2625 4550 2625
+$Comp
+L Device:CP C4
+U 1 1 604425C7
+P 4550 2475
+F 0 "C4" H 4500 2250 50  0000 L CNN
+F 1 "330uF 25V" H 4325 2175 50  0000 L CNN
+F 2 "AERO-footprints:CAP_18x25_NICH" H 4588 2325 50  0001 C CNN
+F 3 "~" H 4550 2475 50  0001 C CNN
+	1    4550 2475
+	1    0    0    -1  
+$EndComp
+Connection ~ 4550 2325
+Wire Wire Line
+	4550 2325 5000 2325
+Connection ~ 4550 2625
+Wire Wire Line
+	4550 2625 5000 2625
+$Comp
+L Device:CP C5
+U 1 1 604471C5
+P 5000 2475
+F 0 "C5" H 4950 2250 50  0000 L CNN
+F 1 "330uF 25V" H 4800 2175 50  0000 L CNN
+F 2 "AERO-footprints:CAP_18x25_NICH" H 5038 2325 50  0001 C CNN
+F 3 "~" H 5000 2475 50  0001 C CNN
+	1    5000 2475
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 2325
+Wire Wire Line
+	5000 2325 5425 2325
+Connection ~ 5000 2625
+Wire Wire Line
+	5000 2625 5425 2625
+$Comp
+L Device:CP C6
+U 1 1 6044772E
+P 5425 2475
+F 0 "C6" H 5375 2250 50  0000 L CNN
+F 1 "47uF 25V" H 5275 2175 50  0000 L CNN
+F 2 "AERO-footprints:CAP_18x25_NICH" H 5463 2325 50  0001 C CNN
+F 3 "~" H 5425 2475 50  0001 C CNN
+	1    5425 2475
+	1    0    0    -1  
+$EndComp
+Connection ~ 5425 2325
+Wire Wire Line
+	5425 2325 5825 2325
+Connection ~ 5425 2625
+Wire Wire Line
+	5425 2625 5825 2625
+$Comp
+L Device:C C7
+U 1 1 60447D91
+P 5825 2475
+F 0 "C7" H 5775 2250 50  0000 L CNN
+F 1 "0.1uF 50v" H 5675 2150 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D10.0mm_H12.5mm_P5.00mm" H 5863 2325 50  0001 C CNN
+F 3 "~" H 5825 2475 50  0001 C CNN
+	1    5825 2475
+	1    0    0    -1  
+$EndComp
+Connection ~ 5825 2325
+Wire Wire Line
+	5825 2325 6525 2325
+Connection ~ 5825 2625
+Wire Wire Line
+	5825 2625 6525 2625
+$Comp
+L AERO_custom_symbols:Vicor_AERO U1
+U 1 1 60448970
+P 3875 1975
+F 0 "U1" H 3900 2050 50  0000 C CNN
+F 1 "Vicor_AERO" H 3900 1959 50  0000 C CNN
+F 2 "AERO-footprints:vicor-socket" H 3875 1975 50  0001 C CNN
+F 3 "" H 3875 1975 50  0001 C CNN
+	1    3875 1975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 3950 1400 4050
+Connection ~ 1400 4150
+Connection ~ 1400 4050
+Wire Wire Line
+	1400 4050 1400 4150
+Wire Wire Line
+	1400 4675 1400 4775
+Connection ~ 1400 4675
+Connection ~ 1400 4775
+Wire Wire Line
+	1400 4775 1400 4875
+Text Notes 1475 4000 0    50   ~ 0
+IMD_TSV+
+Text Notes 1450 4825 0    50   ~ 0
+IMD_TSV-
+Wire Wire Line
+	1525 2425 1875 2425
+Wire Wire Line
+	2850 1850 2175 1850
+$Comp
+L power:+12V #PWR0116
+U 1 1 6046F0CE
+P 2025 1700
+F 0 "#PWR0116" H 2025 1550 50  0001 C CNN
+F 1 "+12V" H 2040 1873 50  0000 C CNN
+F 2 "" H 2025 1700 50  0001 C CNN
+F 3 "" H 2025 1700 50  0001 C CNN
+	1    2025 1700
+	1    0    0    -1  
+$EndComp
+Wire Notes Line width 39
+	3925 1175 3925 3400
+Wire Notes Line width 39
+	875  1125 3925 1125
+Wire Notes Line width 39
+	4550 3350 3925 3350
+Wire Wire Line
+	1725 3025 1725 2900
+Connection ~ 1725 3025
+Wire Wire Line
+	1725 3150 1875 3150
+Wire Wire Line
+	1725 3150 1725 3025
+Wire Wire Line
+	1875 2900 1725 2900
+Wire Wire Line
+	2175 3000 2175 2900
+Connection ~ 2175 3000
+Wire Wire Line
+	2400 3000 2175 3000
+Wire Wire Line
+	2175 3150 2175 3000
+$Comp
+L Device:R R11
+U 1 1 60474847
+P 2550 3000
+F 0 "R11" V 2343 3000 50  0000 C CNN
+F 1 "R" V 2434 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2480 3000 50  0001 C CNN
+F 3 "~" H 2550 3000 50  0001 C CNN
+	1    2550 3000
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Switch:SW_SPST SW?
-U 1 1 60355426
-P 5500 1850
-F 0 "SW?" H 5500 2085 50  0000 C CNN
-F 1 "SW_SPST" H 5500 1994 50  0000 C CNN
-F 2 "" H 5500 1850 50  0001 C CNN
-F 3 "~" H 5500 1850 50  0001 C CNN
-	1    5500 1850
-	1    0    0    -1  
+L Device:LED D1
+U 1 1 60473B9B
+P 2025 3150
+F 0 "D1" H 1975 3275 50  0000 C CNN
+F 1 "LED" H 2000 3375 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2025 3150 50  0001 C CNN
+F 3 "~" H 2025 3150 50  0001 C CNN
+	1    2025 3150
+	1    0    0    1   
 $EndComp
+$Comp
+L Device:R R10
+U 1 1 60472F0F
+P 2025 2900
+F 0 "R10" V 1818 2900 50  0000 C CNN
+F 1 "R" V 1909 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1955 2900 50  0001 C CNN
+F 3 "~" H 2025 2900 50  0001 C CNN
+	1    2025 2900
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2700 2575 3475 2575
+Wire Wire Line
+	2700 2575 2700 3000
+Wire Wire Line
+	2275 2425 3475 2425
+Wire Wire Line
+	2850 1850 2850 2275
+Wire Wire Line
+	2850 2275 3475 2275
+Wire Wire Line
+	2025 2000 2025 2075
+Wire Wire Line
+	2025 2075 1525 2075
+Wire Wire Line
+	1525 3025 1725 3025
 $EndSCHEMATC
