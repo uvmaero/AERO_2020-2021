@@ -230,11 +230,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# HVPDU-rescue_LM555-Timer
+# HV_DCDC-rescue_LM555-Timer-HVPDU-rescue
 #
-DEF HVPDU-rescue_LM555-Timer U 0 20 Y Y 1 F N
+DEF HV_DCDC-rescue_LM555-Timer-HVPDU-rescue U 0 20 Y Y 1 F N
 F0 "U" -400 350 50 H V L CNN
-F1 "HVPDU-rescue_LM555-Timer" 100 350 50 H V L CNN
+F1 "HV_DCDC-rescue_LM555-Timer-HVPDU-rescue" 100 350 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
