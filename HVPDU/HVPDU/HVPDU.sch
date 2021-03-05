@@ -312,15 +312,15 @@ Wire Wire Line
 Text Notes 8975 4375 0    50   ~ 0
 PWR / Signal\nfrom BMS
 $Sheet
-S 6025 1525 1200 650 
+S 6200 3350 1200 650 
 U 60471413
 F0 "TSAL_on_HVPDU" 50
 F1 "TSAL_on_HVPDU.sch" 50
-F2 "RED_GND" O R 7225 2050 50 
-F3 "TSV+_IN" I L 6025 1675 50 
-F4 "TSV-_IN" I L 6025 2025 50 
-F5 "DCDC_12V+" I R 7225 1650 50 
-F6 "GND" B R 7225 1775 50 
+F2 "RED_GND" O R 7400 3875 50 
+F3 "TSV+_IN" I L 6200 3500 50 
+F4 "TSV-_IN" I L 6200 3850 50 
+F5 "DCDC_12V+" I R 7400 3475 50 
+F6 "GND" B R 7400 3600 50 
 $EndSheet
 $Comp
 L power:GND #PWR0115
@@ -339,31 +339,31 @@ Text Notes 3475 2850 0    50   ~ 0
 Reference DCDC \noutput gnd to frame
 Text Notes 1250 4425 0    50   ~ 0
 Input from\nHV Lines
-Text Label 5575 1675 0    50   ~ 0
+Text Label 5750 3500 0    50   ~ 0
 TSAL_TSV+
 Wire Wire Line
-	5575 1675 6025 1675
-Text Label 5575 2025 0    50   ~ 0
+	5750 3500 6200 3500
+Text Label 5750 3850 0    50   ~ 0
 TSV-
 Wire Wire Line
-	5575 2025 6025 2025
-Text Notes 5025 1900 0    50   ~ 0
+	5750 3850 6200 3850
+Text Notes 5200 3725 0    50   ~ 0
 TSAL Must be powered\ndirectly from TSV
-Text Label 7725 1775 2    50   ~ 0
+Text Label 7900 3600 2    50   ~ 0
 -DCDC_OUT
 Wire Wire Line
-	7725 1775 7225 1775
-Text Label 7725 1650 2    50   ~ 0
+	7900 3600 7400 3600
+Text Label 7900 3475 2    50   ~ 0
 +DCDC_OUT
 Wire Wire Line
-	7725 1650 7225 1650
-Text Notes 7325 1550 0    50   ~ 0
+	7900 3475 7400 3475
+Text Notes 7500 3375 0    50   ~ 0
 TSAL Must be powered\ndirectly from TSV.\nEven LV side
-Text Label 7750 2050 2    50   ~ 0
+Text Label 7925 3875 2    50   ~ 0
 RED_ON_GND
 Wire Wire Line
-	7750 2050 7225 2050
-Text Notes 7325 2225 0    50   ~ 0
+	7925 3875 7400 3875
+Text Notes 7500 4050 0    50   ~ 0
 Blink Blink GND\nfor TSAL
 $Comp
 L Connector_Generic:Conn_01x01 J3
@@ -505,6 +505,54 @@ F 1 "Vicor_AERO" H 2525 1659 50  0000 C CNN
 F 2 "" H 2500 1675 50  0001 C CNN
 F 3 "" H 2500 1675 50  0001 C CNN
 	1    2500 1675
+	1    0    0    -1  
+$EndComp
+Text Label 1850 1975 0    50   ~ 0
+TR
+Wire Wire Line
+	1850 1975 2100 1975
+Text Label 1850 2125 0    50   ~ 0
+EN
+Wire Wire Line
+	1850 2125 2100 2125
+Text Label 1850 2275 0    50   ~ 0
+FT
+Wire Wire Line
+	1850 2275 2100 2275
+Text Label 4675 1300 0    50   ~ 0
+TR
+Wire Wire Line
+	4675 1300 4925 1300
+Text Label 4675 1450 0    50   ~ 0
+EN
+Wire Wire Line
+	4675 1450 4925 1450
+Text Label 4675 1600 0    50   ~ 0
+FT
+Wire Wire Line
+	4675 1600 4925 1600
+Text Notes 4675 1025 0    79   ~ 0
+Vicor Settings
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 603539E0
+P 5475 1300
+F 0 "RV?" V 5360 1300 50  0000 C CNN
+F 1 "R_POT_TRIM" V 5269 1300 50  0000 C CNN
+F 2 "" H 5475 1300 50  0001 C CNN
+F 3 "~" H 5475 1300 50  0001 C CNN
+	1    5475 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 60355426
+P 5500 1850
+F 0 "SW?" H 5500 2085 50  0000 C CNN
+F 1 "SW_SPST" H 5500 1994 50  0000 C CNN
+F 2 "" H 5500 1850 50  0001 C CNN
+F 3 "~" H 5500 1850 50  0001 C CNN
+	1    5500 1850
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

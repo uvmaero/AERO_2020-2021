@@ -32,7 +32,7 @@ U 1 1 604738B2
 P 7500 3050
 F 0 "R5" V 7400 3050 50  0000 C CNN
 F 1 "10k" V 7500 3050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7430 3050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7430 3050 50  0001 C CNN
 F 3 "~" H 7500 3050 50  0001 C CNN
 	1    7500 3050
 	0    1    1    0   
@@ -59,7 +59,7 @@ F 3 "" H 8050 3750 50  0001 C CNN
 	1    8050 3750
 	1    0    0    -1  
 $EndComp
-Text Label 8650 2850 0    50   ~ 0
+Text Label 9425 2850 0    50   ~ 0
 RED_ON
 Wire Wire Line
 	4725 3350 4400 3350
@@ -78,7 +78,7 @@ U 1 1 5F99A37B
 P 6225 3250
 F 0 "R4" H 6295 3296 50  0000 L CNN
 F 1 "235k" H 6295 3205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6155 3250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6155 3250 50  0001 C CNN
 F 3 "~" H 6225 3250 50  0001 C CNN
 	1    6225 3250
 	1    0    0    -1  
@@ -89,7 +89,7 @@ U 1 1 5F99ABB4
 P 6225 2950
 F 0 "R3" H 6295 2996 50  0000 L CNN
 F 1 "100k" H 6295 2905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6155 2950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6155 2950 50  0001 C CNN
 F 3 "~" H 6225 2950 50  0001 C CNN
 	1    6225 2950
 	1    0    0    -1  
@@ -145,7 +145,7 @@ U 1 1 5F9B2DED
 P 2450 3450
 F 0 "R2" H 2520 3496 50  0000 L CNN
 F 1 "10k" H 2520 3405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2380 3450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2380 3450 50  0001 C CNN
 F 3 "~" H 2450 3450 50  0001 C CNN
 	1    2450 3450
 	1    0    0    -1  
@@ -175,7 +175,7 @@ U 1 1 604738BC
 P 5725 3725
 F 0 "C2" H 5840 3771 50  0000 L CNN
 F 1 "1u" H 5840 3680 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5763 3575 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5763 3575 50  0001 C CNN
 F 3 "~" H 5725 3725 50  0001 C CNN
 	1    5725 3725
 	1    0    0    -1  
@@ -196,7 +196,7 @@ U 1 1 604738BD
 P 4650 3675
 F 0 "C1" H 4765 3721 50  0000 L CNN
 F 1 "0.1u" H 4765 3630 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4688 3525 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4688 3525 50  0001 C CNN
 F 3 "~" H 4650 3675 50  0001 C CNN
 	1    4650 3675
 	1    0    0    -1  
@@ -254,7 +254,7 @@ U 1 1 604738C2
 P 8275 3600
 F 0 "R6" V 8175 3600 50  0000 C CNN
 F 1 "0.75" V 8275 3600 50  0000 C CNN
-F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 8205 3600 50  0001 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder" V 8205 3600 50  0001 C CNN
 F 3 "~" H 8275 3600 50  0001 C CNN
 	1    8275 3600
 	-1   0    0    1   
@@ -289,8 +289,6 @@ Connection ~ 8050 3750
 Wire Wire Line
 	8050 3750 7850 3750
 Wire Wire Line
-	8275 2850 9000 2850
-Wire Wire Line
 	7650 3050 7850 3050
 Wire Wire Line
 	7850 3250 7850 3050
@@ -301,7 +299,7 @@ Text Notes 7875 2775 0    50   ~ 0
 CC Output
 Text Notes 8525 3675 0    50   ~ 0
 Change R6 for \nCurrent Rating
-Text Notes 8875 2700 0    50   ~ 0
+Text Notes 9475 2700 0    50   ~ 0
 To AMPSEAL\nfor TSAL Red Out
 $Comp
 L Device:C C3
@@ -309,7 +307,7 @@ U 1 1 5FACE85F
 P 4700 2375
 F 0 "C3" H 4815 2421 50  0000 L CNN
 F 1 "0.1u" H 4815 2330 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4738 2225 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4738 2225 50  0001 C CNN
 F 3 "~" H 4700 2375 50  0001 C CNN
 	1    4700 2375
 	1    0    0    -1  
@@ -330,18 +328,7 @@ F 3 "" H 4700 2525 50  0001 C CNN
 	1    4700 2525
 	1    0    0    -1  
 $EndComp
-$Comp
-L _NONAME_ U2
-U 1 1 00000000
-P 5225 3150
-F 0 "U2" H 5225 3731 50  0000 C CNN
-F 1 "LM555" H 5225 3640 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5225 3150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 5225 3150 50  0001 C CNN
-	1    5225 3150
-	1    0    0    -1  
-$EndComp
-Text HLabel 9000 2850 2    50   Output ~ 0
+Text HLabel 9725 2850 2    50   Output ~ 0
 RED_GND
 Text Label 1425 2275 0    50   ~ 0
 TSAL_TSV+
@@ -362,4 +349,32 @@ GND
 Wire Wire Line
 	2575 3750 2450 3750
 Connection ~ 2450 3750
+$Comp
+L HVPDU-rescue:LM555-Timer U2
+U 1 1 602F6BE1
+P 5225 3150
+F 0 "U2" H 5225 3731 50  0000 C CNN
+F 1 "LM555" H 5225 3640 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5225 3150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 5225 3150 50  0001 C CNN
+	1    5225 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 6062048F
+P 8675 2850
+F 0 "R9" V 8775 2850 50  0000 C CNN
+F 1 "1.0" V 8675 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder" V 8605 2850 50  0001 C CNN
+F 3 "~" H 8675 2850 50  0001 C CNN
+	1    8675 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8525 2850 8275 2850
+Wire Wire Line
+	8825 2850 9725 2850
+Text Notes 8600 2550 0    39   ~ 0
+Current Limiting \nResistor
 $EndSCHEMATC
