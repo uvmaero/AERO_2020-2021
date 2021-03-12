@@ -359,4 +359,20 @@ Text Notes 9575 5950 0    50   ~ 0
 All Ampseal Pins\nNeed to Be Gold Plated\nfor Current Rating
 Text Notes 4175 6275 0    50   ~ 0
 TODO: \nAdd fuse for Battery In
+Text Notes 9650 2700 0    50   ~ 0
+10A
+Text Notes 9650 1750 0    50   ~ 0
+5A
+Text Notes 9650 3050 0    50   ~ 0
+5A
+Text Notes 9650 3400 0    50   ~ 0
+2A
+Text Notes 7300 5700 0    50   ~ 0
+30A
+Text Notes 9650 1450 0    50   ~ 0
+2A
+Text Notes 9600 2350 0    50   ~ 0
+7.5A
+Text Notes 9650 2050 0    50   ~ 0
+5A
 $EndSCHEMATC
