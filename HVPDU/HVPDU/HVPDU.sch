@@ -536,7 +536,7 @@ Connection ~ 5825 2625
 Wire Wire Line
 	5825 2625 6525 2625
 $Comp
-L AERO_custom_symbols:Vicor_AERO U1
+L HVPDU-rescue:Vicor_AERO-AERO_custom_symbols U1
 U 1 1 60448970
 P 3875 1975
 F 0 "U1" H 3900 2050 50  0000 C CNN

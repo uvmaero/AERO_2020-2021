@@ -3984,7 +3984,7 @@
   (gr_text "GND\nIN 3\nIN 2\nIN 1\n+5V" (at 188.595 111.76 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "GND\n12\nFault\nGND 2\nGND3" (at 163.83 111.125 90) (layer F.SilkS)
+  (gr_text "GND\n12\nFault\nGND 2\nGND 3" (at 163.83 111.125 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "Current Sensor" (at 187.96 106.68) (layer F.SilkS)

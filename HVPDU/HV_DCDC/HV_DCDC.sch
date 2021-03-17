@@ -391,7 +391,7 @@ GND MUST BE\nGOLD PLATED\nFOR CURRENT RATING
 Text Notes 7400 7125 0    94   ~ 0
 This is an HV board using\nthe EPM1510SJ DCDC \n\nNot used for GLV Charging
 $Comp
-L AERO_custom_symbols:EPM1510SJ U1
+L HV_DCDC-rescue:EPM1510SJ-AERO_custom_symbols U1
 U 1 1 6042841A
 P 2575 1525
 F 0 "U1" H 2575 1590 50  0000 C CNN

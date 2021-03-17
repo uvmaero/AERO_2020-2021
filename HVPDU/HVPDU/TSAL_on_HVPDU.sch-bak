@@ -62,8 +62,6 @@ $EndComp
 Text Label 9425 2850 0    50   ~ 0
 RED_ON
 Wire Wire Line
-	4725 3350 4400 3350
-Wire Wire Line
 	4400 3350 4400 2750
 Wire Wire Line
 	4400 2750 5225 2750
@@ -94,23 +92,16 @@ F 3 "~" H 6225 2950 50  0001 C CNN
 	1    6225 2950
 	1    0    0    -1  
 $EndComp
-Connection ~ 6225 3100
 Wire Wire Line
 	6225 2800 6225 2750
 Wire Wire Line
-	6225 2750 5225 2750
-Wire Wire Line
 	5725 3150 5725 3100
-Wire Wire Line
-	5725 3100 6225 3100
 Wire Wire Line
 	5725 3400 5725 3350
 Wire Wire Line
 	5725 3400 6225 3400
 Text Label 6100 2950 2    50   ~ 0
 555_OUT
-Wire Wire Line
-	6100 2950 5725 2950
 Text Label 7000 3050 0    50   ~ 0
 555_OUT
 Wire Wire Line
@@ -204,8 +195,6 @@ $EndComp
 Wire Wire Line
 	4650 3525 4650 3150
 Wire Wire Line
-	4650 3150 4725 3150
-Wire Wire Line
 	4650 3825 4650 3875
 Wire Wire Line
 	4650 3875 5225 3875
@@ -234,8 +223,6 @@ Wire Notes Line width 20
 	975  4325 2200 4325
 Text Notes 1225 1800 0    71   ~ 14
 High Voltage
-Wire Wire Line
-	4500 2950 4725 2950
 $Comp
 L Isolator:LTV-817S U3
 U 1 1 5F9DE7CE
@@ -350,17 +337,6 @@ Wire Wire Line
 	2575 3750 2450 3750
 Connection ~ 2450 3750
 $Comp
-L HVPDU-rescue:LM555-Timer U2
-U 1 1 602F6BE1
-P 5225 3150
-F 0 "U2" H 5225 3731 50  0000 C CNN
-F 1 "LM555" H 5225 3640 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5225 3150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 5225 3150 50  0001 C CNN
-	1    5225 3150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R9
 U 1 1 6062048F
 P 8675 2850
@@ -377,4 +353,28 @@ Wire Wire Line
 	8825 2850 9725 2850
 Text Notes 8325 2700 0    39   ~ 0
 Current Limiting Resistor\n(Redundant b/c CC source output)\n(Just In case)
+Connection ~ 6225 3100
+Wire Wire Line
+	5725 3100 6225 3100
+Wire Wire Line
+	4725 3350 4400 3350
+Wire Wire Line
+	4650 3150 4725 3150
+Wire Wire Line
+	4500 2950 4725 2950
+Wire Wire Line
+	5225 2750 6225 2750
+Wire Wire Line
+	5725 2950 6100 2950
+$Comp
+L Timer:LM555xM U?
+U 1 1 60519E1D
+P 5225 3150
+F 0 "U?" H 5225 3731 50  0000 C CNN
+F 1 "LM555xM" H 5225 3640 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6075 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 6075 2750 50  0001 C CNN
+	1    5225 3150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
