@@ -26,10 +26,10 @@ Text Label 5775 6775 0    50   ~ 0
 CAN+
 Wire Wire Line
 	5775 6775 6075 6775
-Text Label 5775 6875 0    50   ~ 0
+Text Label 5775 7075 0    50   ~ 0
 CAN-
 Wire Wire Line
-	5775 6875 6075 6875
+	5500 6875 6075 6875
 $Comp
 L power:GND #PWR0105
 U 1 1 60081230
@@ -45,14 +45,10 @@ Text Label 5525 7475 0    50   ~ 0
 PRECHARGE
 Wire Wire Line
 	5525 7475 6075 7475
-Text Label 5525 7075 0    50   ~ 0
+Text Label 5500 6875 0    50   ~ 0
 CONTACTOR
 Wire Wire Line
-	5525 7075 6075 7075
-Text Label 5525 7275 0    50   ~ 0
-SHUTDOWN_IN
-Wire Wire Line
-	5525 7275 6075 7275
+	5775 7075 6075 7075
 Text Label 1875 4775 0    50   ~ 0
 PRECHARGE
 Wire Wire Line
@@ -273,8 +269,6 @@ Wire Wire Line
 Wire Wire Line
 	10200 2825 10400 2825
 Wire Wire Line
-	5375 7375 6075 7375
-Wire Wire Line
 	6075 6975 5600 6975
 Text Label 5600 6975 0    50   ~ 0
 FAN_CTRL
@@ -295,16 +289,16 @@ CAN is for BMS \nlocal bus\n
 $Comp
 L power:+12V #PWR0106
 U 1 1 6037F25F
-P 5375 7175
-F 0 "#PWR0106" H 5375 7025 50  0001 C CNN
-F 1 "+12V" H 5390 7348 50  0000 C CNN
-F 2 "" H 5375 7175 50  0001 C CNN
-F 3 "" H 5375 7175 50  0001 C CNN
-	1    5375 7175
+P 5375 7275
+F 0 "#PWR0106" H 5375 7125 50  0001 C CNN
+F 1 "+12V" H 5390 7448 50  0000 C CNN
+F 2 "" H 5375 7275 50  0001 C CNN
+F 3 "" H 5375 7275 50  0001 C CNN
+	1    5375 7275
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5375 7175 6075 7175
+	5525 7175 6075 7175
 $Comp
 L Connector_Generic:Conn_01x04 J5
 U 1 1 603CB967
@@ -354,4 +348,10 @@ F 3 "~" H 8650 3625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8450 3625
+Text Label 5525 7175 0    50   ~ 0
+SHUTDOWN_IN
+Wire Wire Line
+	5375 7275 6075 7275
+Wire Wire Line
+	5375 7375 6075 7375
 $EndSCHEMATC
